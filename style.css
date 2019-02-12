@@ -1,6 +1,7 @@
 /* ----- GENERAL ----- */
 * {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* border: 1px solid black */
   }
   
   body {
@@ -33,13 +34,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 40vh;
+}
+
+header.hero{
     background-image: url("https://images.unsplash.com/photo-1534262521332-cfd802370cc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    min-height: 100vh;
   }
-  
-  
+
+header.hero h1{
+    color: white
+}
+
   header h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 2.3em;
     line-height: 1.3em;
@@ -63,13 +71,29 @@
   }
   
   section .container {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
-  
+  .split_personality {
+    display: flex; 
+    justify-content: center;
+
+  }
+.split_personality > a {
+
+    padding: 20px 30px;
+    margin: 7px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 150px;
+
+}
+
   section.joke {
     text-align: center;
   }
+
+ 
   
   section.joke h2 {
     margin-bottom: 500px 0;
@@ -91,6 +115,9 @@
     width: 150px;
   }
   
+  section.joke #answer {
+      max-width: 50vW;
+}
   
   section.resume .item {
     display: flex;
